@@ -12,7 +12,8 @@ const countries = [
     'KENYA'
   ]
 const count = countries.map((x) => {
-  return [x, x.length];
+  const leters = x.substring(0, 3);
+  return [x, leters, x.length];
 })
 console.log(count);
 
